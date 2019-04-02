@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Courgette');
+
+
+h1{
+    font-family: 'Comfortaa', cursive;
+    color: #61dafb;
+    text-shadow: 0 0 10px #4eb7d4, 0 0 20px #c9f3ff, 0 0 50px white, 5px 5px #000000bd;
+    animation: flicker 3s infinite step-start;
+  }
+  
+  @keyframes flicker{
+    0%,10%,40%,60%,70%{
+      opacity: .8;
+    }
+    7%,38%,59%,65%{
+      opacity: .95;
+    }
+    62%, 52%{
+      opacity: 1;
+    }
+  
+  }
+  p, h3{
+    font-family: 'Courgette', cursive;
+  }
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear, flicker 3.7s infinite step-start;
+    height: 40vmin;
+    pointer-events: none;
+    filter: drop-shadow(0 0 10px #4eb7d4) drop-shadow(0 0 50px white) drop-shadow(5px 5px #000000bd);
+  }
+
